@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { routes } from 'routes';
+// import { routes } from 'routes';
 import logo from 'assets/kinetoSmileLogo.png';
 import facebook from 'assets/facebook-icon.png';
 import youtube from 'assets/youtube-icon.png';
