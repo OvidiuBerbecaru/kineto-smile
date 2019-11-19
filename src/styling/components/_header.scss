@@ -1,0 +1,11 @@
+.menu-header {
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    & :hover {
+      text-decoration: none;
+    }
+  }
+}

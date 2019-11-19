@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import { routes } from 'routes';
+import { Navbar, Nav } from 'react-bootstrap';
 import logo from 'assets/kinetoSmileLogo.png';
 import facebook from 'assets/facebook-icon.png';
 import youtube from 'assets/youtube-icon.png';
@@ -27,20 +27,35 @@ const pages = [
 
 const Header = () => {
   return (
-    <div className="container-fluid header bg-transparent">
+    <div className="menu-header position-absolute w-100">
       <div className="container">
-        <div className="row justify-content-between align-items-center">
-          <img src={logo} className="mt-3 mb-3" style={{ height: '75px' }} alt="Logo" />
-          <div className="d-flex align-items-center text-decoration-none">
-            {
-              pages.map((page) => <NavLink key={page.name} to={page.path}>{page.name}</NavLink>)
-            }
-            <div>
-              {headerIcons.map(icon => {
-                return <img key={icon} className="footer-icon ml-2" src={icon} alt={icon} />;
-              })}
-            </div>
-          </div>
+        <div className="row">
+          <Navbar bg="transparent" expand="lg" className="w-100">
+            <Navbar.Brand>
+              <img src={logo} className="mt-3 mb-3" style={{ height: '75px' }} alt="Logo" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-0 align-items-center">
+                {
+                  pages.map(page => (
+                    <Nav.Link>
+                      <div className="text-decoration-none nav-link">
+                        <NavLink key={page.name} to={page.path}>{page.name}</NavLink>
+                      </div>
+                    </Nav.Link>
+                  ))
+                }
+                {
+                  headerIcons.map(icon => (
+                    <Nav.Link>
+                      <img key={icon} className="footer-icon" src={icon} alt={icon} />
+                    </Nav.Link>
+                  ))
+                }
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         </div>
       </div>
     </div>
