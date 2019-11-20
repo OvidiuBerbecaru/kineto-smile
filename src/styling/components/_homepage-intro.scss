@@ -3,12 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 14rem 0;
-  text-shadow: 1px 1px 1px grey;
+  text-shadow: 2px 2px 2px lightslategray;
 
   .intro-separator {
     height: 0.2rem;
     width: 25%;
     background-color: white;
+    box-shadow: 1px 1px 1px lightslategray;
   }
 
   @media screen and ( max-width: 768px ) {

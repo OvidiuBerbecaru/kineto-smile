@@ -1,9 +1,21 @@
 .menu-header {
+  border-bottom: 1px solid white;
+
   .navbar-collapse {
     justify-content: flex-end;
   }
 
+  .navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+  }
+
   .nav-link {
+    a {
+      color: white;
+      text-shadow: 2px 2px 2px lightslategray;
+    }
+
     & :hover {
       text-decoration: none;
     }
