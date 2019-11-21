@@ -1,7 +1,10 @@
 .separator {
-    height: 2rem;
+  height: 1rem;
+  position: relative;
+
 }
 
 .separator-message {
-    top: 1rem;
+  position: relative;
+  top: -6rem;
 }
