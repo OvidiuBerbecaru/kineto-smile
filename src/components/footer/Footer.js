@@ -16,7 +16,7 @@ const footerIcons = [
 
 const Footer = () => {
   return (
-    <div className="container-fluid footer-container">
+    <div className="container-fluid footer-container app-bg">
       <div className="container">
         <div className="row footer d-flex align-items-center justify-content-between">
           <div className="d-flex">

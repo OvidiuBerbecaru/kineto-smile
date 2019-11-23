@@ -1,0 +1,24 @@
+.contact {
+  margin-top: 10rem;
+
+  h2 {
+    margin: 0 auto;
+    color: #747474;
+  }
+
+  .contact-data {
+    color: white;
+    border-radius: 20px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 1.1rem;
+    
+    // span {
+    //   padding: 2rem 0;
+    // }
+
+    @media screen and ( max-width: 1200px ) {
+      margin-top: 2rem;
+    }
+  }
+}

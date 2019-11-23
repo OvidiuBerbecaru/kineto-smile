@@ -44,7 +44,9 @@ const Header = (props) => {
           <div className="row">
             <Navbar bg="transparent" expand="lg" className="w-100">
               <Navbar.Brand>
-                <img src={logo} className="mt-3 mb-3" style={{ height: '75px' }} alt="Logo" />
+                <NavLink to="/">
+                  <img src={logo} className="mt-3 mb-3" style={{ height: '75px' }} alt="Logo" />
+                </NavLink>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
