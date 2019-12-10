@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import TeamImg from 'assets/team-homepage.png';
 
 const descriptionText = 'Consectetur adipiscing elit. Ut convallis ante sit amet risuseleifend, sed tincidunt felis mollis.Ut convallis ante sit amet risuseleifend, sed tincidunt felis mollis.eleifend, sed tincidunt felis mollis.Ut convallis ante sit amet risus';
 
@@ -9,15 +10,15 @@ const HomePageIntro = () => {
         <div className="row">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 col-12">
+              <div className="col-md-5 col-12">
                 <h1>KINETO SMILE</h1>
                 <div className="intro-separator mt-4" />
                 <p className="mt-4">
                   {descriptionText}
                 </p>
               </div>
-              <div className="col-md-6 intro-image">
-                <p>future image</p>
+              <div className="col-md-7 intro-image">
+                <img src={TeamImg} alt="team" className="w-100" />
               </div>
             </div>
           </div>

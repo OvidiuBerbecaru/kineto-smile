@@ -6,18 +6,12 @@ const Medic = ({ medicData }) => {
   } = medicData;
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6">
-          <div className="d-flex justify-content-between align-items-center">
-            { name }
-            { specialization }
-          </div>
-        </div>
-        <div className="col-md-6">
-          { description }
-        </div>
-      </div>
+    <div className="col-md-4 medic">
+      {image}
+      {name}
+      {specialization}
+      {description}
+      {quote}
     </div>
   );
 };
