@@ -1,0 +1,41 @@
+.medic {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 2rem;
+  background-color: white;
+  margin-top: 8rem;
+
+  img {
+    padding-top: 1rem;
+    height: 20rem;
+  }
+
+  .text {
+    font-family: 'Nunito';
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.19);
+
+    .name {
+      color: #00A8E1;
+      font-weight: 400;
+      font-size: 1.9rem;
+    }
+
+    .specialization {
+      font-size: 1rem;
+      color: #00A4E1;
+    }
+
+    .quote{
+      color: #FF4B00;
+      font-size: 1.4rem;
+      font-weight: 600rem;
+    }
+
+    .description {
+      height: 28rem;
+    }
+  }
+}
+
+.echipa {
+  background: linear-gradient(90deg, rgba(79,187,240,1) 0%, rgba(102,234,187,1) 100%);
+}

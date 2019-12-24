@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { CeTratam } from 'assets/svgAssets';
 import Contact from 'components/contact/Contact';
 import Proiecte from 'components/proiecte/Proiecte';
+import Echipa from 'components/echipa/Echipa';
 import Separator from 'components/shared/Separator';
 import DespreNoi from 'components/despreNoi/DespreNoi';
 import HomePageIntro from './HomePageIntro';
@@ -22,6 +23,10 @@ const HomePage = () => {
         <CeTratam />
       </Separator>
       <Proiecte />
+      <Separator>
+        <CeTratam />
+      </Separator>
+      <Echipa />
     </Fragment>
   );
 };
