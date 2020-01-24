@@ -1,7 +1,20 @@
 .separator {
-  height: 1rem;
   position: relative;
-
+  background: white;
+  height: 1rem;
+  div{
+    position: absolute;
+    top: -5rem;
+    height: 11rem;
+    width: 11rem;
+    border: 1px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 1.5rem;
+    color: #FF4B00;
+    text-align: center;
+  }
 }
 
 .separator-message {

@@ -35,8 +35,8 @@ const Echipa = () => {
       <div className="row justify-content-around">
         {
           medicsData.map(({
-            name, image, specialization, quote, description,
-          }) => (<Medic name={name} image={image} specialization={specialization} quote={quote} description={description} />))
+            name, image, specialization, quote, description, isLast,
+          }) => (<Medic name={name} image={image} specialization={specialization} quote={quote} description={description} isLast={isLast} />))
         }
       </div>
     </div>

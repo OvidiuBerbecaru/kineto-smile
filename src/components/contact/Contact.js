@@ -23,8 +23,8 @@ const Contact = () => {
   return (
     <div className="container contact mb-5">
       <div className="row">
-        <h2>Hai sa ne cunoastem !</h2>
-        <div className="container mt-5">
+        {/* <h2>Hai sa ne cunoastem !</h2> */}
+        <div className="container">
           <div className="row">
             {
               contactDataSet.map(contactData => <ContactData contactData={contactData} />)

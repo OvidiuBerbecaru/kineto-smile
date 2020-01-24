@@ -1,7 +1,7 @@
 import React from 'react';
 import Tarif from 'components/tarife/Tarif';
 
-const tarife = [
+const tarifeSet1 = [
   {
     title: 'Consultatie Medic Specialist',
     service: ['Recuperare Medicala - 235lei', 'Evaluare Initiala - 150lei'],
@@ -12,12 +12,15 @@ const tarife = [
   },
   {
     title: 'Terapie Manuala(stretching, vojta)',
-    service: ['1 sedinta', 'Abonament 10 sedinte/luna - 1250lei'],
+    service: ['1 sedinta - 145lei', 'Abonament 10 sedinte/luna - 1250lei'],
   },
   {
     title: 'Gimnastica de Intretinere',
     service: ['1 sedinta - 85lei'],
   },
+];
+
+const tarifeSet2 = [
   {
     title: 'Hidrokinetoterapie In Apa Ionizata',
     service: ['1 sedinta - 100lei', 'Abonament 10 sedinte/luna - 900lei'],
@@ -38,8 +41,15 @@ const tarife = [
 
 const Tarife = () => {
   return (
-    <div>
-      {tarife.map(tarif => <Tarif title={tarif.title} services={tarif.service} />)}
+    <div className="container tarife">
+      <div className="row">
+        <div className="col-md-6">
+          {tarifeSet1.map(tarif => <Tarif title={tarif.title} services={tarif.service} />)}
+        </div>
+        <div className="col-md-6">
+          {tarifeSet2.map(tarif => <Tarif title={tarif.title} services={tarif.service} />)}
+        </div>
+      </div>
     </div>
   );
 };

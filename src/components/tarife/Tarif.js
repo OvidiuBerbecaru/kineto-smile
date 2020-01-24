@@ -3,7 +3,7 @@ import React from 'react';
 const Tarif = ({ title, services }) => {
   return (
     <div className="tarif">
-      <h2>{title}</h2>
+      <h5>{title}</h5>
       { services.map(service => (<p>{service}</p>)) }
     </div>
   );
