@@ -5,11 +5,11 @@ import { Navbar, Nav } from 'react-bootstrap';
 import classNames from 'classnames';
 import logo from 'assets/kinetoSmileLogo.png';
 import facebook from 'assets/facebook-icon.png';
-import youtube from 'assets/youtube-icon.png';
+// import youtube from 'assets/youtube-icon.png';
 
 const headerIcons = [
   facebook,
-  youtube,
+  // youtube,
 ];
 
 const pages = [
@@ -62,7 +62,7 @@ const Header = (props) => {
                   }
                   {
                     headerIcons.map(icon => (
-                      <Nav.Link>
+                      <Nav.Link href="https://www.facebook.com/cabinetkineto/">
                         <img key={icon} className="footer-icon" src={icon} alt={icon} />
                       </Nav.Link>
                     ))

@@ -21,3 +21,31 @@
   position: relative;
   top: -6rem;
 }
+
+@media only screen and (max-width: 984px) {
+  .navbar-collapse {
+    background: linear-gradient(90deg, rgba(79,187,240,1) 0%, rgba(102,234,187,1) 100%);
+    z-index: 1000;
+    font-family: 'nunito';
+  }
+
+  .homepage-intro {
+    padding-bottom: 5rem!important;
+  }
+
+  .despre-noi {
+    padding-top: 2rem;
+  }
+
+  .contact {
+    margin-top: 0!important;
+  }
+
+  .proiecte .project {
+    height: 700px!important;
+  }
+
+  .proiecte p {
+    height: auto!important;
+  }
+}

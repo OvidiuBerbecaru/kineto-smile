@@ -1,17 +1,17 @@
 import React from 'react';
 import facebook from 'assets/facebook-icon.png';
-import youtube from 'assets/youtube-icon.png';
+// import youtube from 'assets/youtube-icon.png';
 
 const footerLinks = [
-  'Termeni si Conditii',
-  'Politica de Confidentialitate',
-  'Politica de Cookies',
-  'Copywrite KinetoSmile 2019',
+  // 'Termeni si Conditii',
+  // 'Politica de Confidentialitate',
+  // 'Politica de Cookies',
+  'Copywrite KinetoSmile 2020',
 ];
 
 const footerIcons = [
   facebook,
-  youtube,
+  // youtube,
 ];
 
 const Footer = () => {
@@ -26,7 +26,11 @@ const Footer = () => {
           </div>
           <div>
             {footerIcons.map(icon => {
-              return <img key={icon} className="footer-icon ml-2" src={icon} alt={icon} />;
+              return (
+                <a href="https://www.facebook.com/cabinetkineto/">
+                  <img key={icon} className="footer-icon ml-2" src={icon} alt={icon} />
+                </a>
+              );
             })}
           </div>
         </div>
