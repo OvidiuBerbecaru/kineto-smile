@@ -18,6 +18,14 @@ const pages = [
     path: '/despre-noi',
   },
   {
+    name: 'Proiecte',
+    path: '/contact',
+  },
+  {
+    name: 'Echipa',
+    path: '/contact',
+  },
+  {
     name: 'Tarife',
     path: '/tarife',
   },

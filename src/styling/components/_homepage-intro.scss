@@ -12,7 +12,11 @@
     box-shadow: 1px 1px 1px lightslategray;
   }
 
-  @media screen and ( max-width: 768px ) {
+  p {
+    word-spacing: 0.5rem;
+  }
+
+  @media screen and ( max-width: 991px ) {
     .intro-image {
       display: none;
     }

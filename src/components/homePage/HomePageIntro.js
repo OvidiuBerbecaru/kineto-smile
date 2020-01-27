@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import TeamImg from 'assets/team-homepage.png';
 
-const descriptionText = 'Consectetur adipiscing elit. Ut convallis ante sit amet risuseleifend, sed tincidunt felis mollis.Ut convallis ante sit amet risuseleifend, sed tincidunt felis mollis.eleifend, sed tincidunt felis mollis.Ut convallis ante sit amet risus';
+const descriptionText = 'Cabinetul de kinetoprofilaxie si kinetoterapie Kineto Smile ofera servicii de kinetoterapie (tratarea sistemului osteo-neuro-musculo-articular cu ajutorul exercitiilor fizice) precum si kinetoprofilaxie (exercitii personalizate pentru imbunatatirea capacitatii de efort,pentru preventia unor boli profesionale ce vizeaza sistemul musculoscheletal sau pentru adaptarea organismului la un efort specificsezonier sau la practicarea unui sport).';
 
 const HomePageIntro = () => {
   return (
@@ -10,7 +10,7 @@ const HomePageIntro = () => {
         <div className="row">
           <div className="container">
             <div className="row">
-              <div className="col-md-5 col-12">
+              <div className="col-lg-5 col-12">
                 <h1>KINETO SMILE</h1>
                 <div className="intro-separator mt-4" />
                 <p className="mt-4">

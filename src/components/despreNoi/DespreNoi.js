@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import ivakinetic from 'assets/ivakinetic.jpg';
+import kinetodidactica from 'assets/kinetodidactica.jpg';
 
 const despreNoiData = [
   {
@@ -21,6 +23,9 @@ const despreNoiData = [
       'In 2017 vine la cabinet Daniel Pandele,care asigura serviciile de masaj ale cabinetului.Daniel este dédicatoire profesiei,iubeste oameniisi doreste sa le vina in ajutor prin metode avansate de aplicare a masajului terapeutic.Daniel are experimenta in acceso domeniu si estudiara permanent .',
     ],
   },
+  {
+    timestamp: 'Parteneri',
+  },
 ];
 
 const DespreNoi = () => {
@@ -33,12 +38,20 @@ const DespreNoi = () => {
               <div className="time-period d-flex flex-column align-items-center mt-5">
                 <p className="timestamp mb-4">{timestamp}</p>
                 {
-                  desc.map(paragraph => (<p className="desc">{paragraph}</p>))
+                  desc ? desc.map(paragraph => (<p className="desc">{paragraph}</p>)) : null
                 }
               </div>
             </Fragment>
           ))
         }
+        <div className="w-100 d-flex justify-content-around align-items-center flex-wrap">
+          <a href="https://www.facebook.com/ivakinetic/">
+            <img src={ivakinetic} alt="ivakinetic" style={{ height: '11rem', cursor: 'pointer' }} />
+          </a>
+          <a href="https://www.kinetodidactica.ro/">
+            <img src={kinetodidactica} alt="kinetodidactica" style={{ height: '7rem', cursor: 'pointer' }} />
+          </a>
+        </div>
       </div>
     </div>
   );
