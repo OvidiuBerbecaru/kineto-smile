@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .separator {
   position: relative;
   background: white;
@@ -23,6 +27,7 @@
 }
 
 @media only screen and (max-width: 984px) {
+  
   .navbar-collapse {
     background: linear-gradient(90deg, rgba(79,187,240,1) 0%, rgba(102,234,187,1) 100%);
     z-index: 1000;

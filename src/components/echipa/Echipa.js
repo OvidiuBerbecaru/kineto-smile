@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Lucica from 'assets/lucica.png';
 import Daniel from 'assets/daniel.png';
 import Radu from 'assets/radu.png';
@@ -29,9 +29,9 @@ const medicsData = [
 
 ];
 
-const Echipa = () => {
+const Echipa = forwardRef((props, ref) => {
   return (
-    <div className="container">
+    <div className="container" ref={ref}>
       <div className="row justify-content-around">
         {
           medicsData.map(({
@@ -41,6 +41,6 @@ const Echipa = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Echipa;

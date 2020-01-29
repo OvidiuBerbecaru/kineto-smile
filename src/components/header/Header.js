@@ -5,6 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import classNames from 'classnames';
 import logo from 'assets/kinetoSmileLogo.png';
 import facebook from 'assets/facebook-icon.png';
+import scrollToComponent from 'react-scroll-to-component';
 // import youtube from 'assets/youtube-icon.png';
 
 const headerIcons = [
@@ -35,8 +36,12 @@ const pages = [
   },
 ];
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100);
+
 const Header = (props) => {
   const possiblePaths = ['/despre-noi', '/tarife', '/contact'];
+  const { echipaRef } = props;
+  console.log(echipaRef);
   const headerClasses = classNames(
     'menu-header position-absolute w-100',
     {
@@ -62,8 +67,8 @@ const Header = (props) => {
                   {
                     pages.map(page => (
                       <Nav.Link>
-                        <div className="text-decoration-none nav-link">
-                          <NavLink key={page.name} to={page.path}>{page.name}</NavLink>
+                        <div className="text-decoration-none nav-link" onClick={() => scrollToRef(echipaRef)}>
+                          <NavLink key={page.name}>{page.name}</NavLink>
                         </div>
                       </Nav.Link>
                     ))
