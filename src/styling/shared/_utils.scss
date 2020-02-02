@@ -10,6 +10,21 @@ html {
   cursor: pointer;
 }
 
+.go-to-top {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  z-index: 1000;
+  cursor: pointer;
+  background-color: white;
+
+  img{
+    width: 3rem;
+    padding: 1rem;
+  }
+}
+
 .riseOnHover {
   opacity: 0.4;
   width: 50%;

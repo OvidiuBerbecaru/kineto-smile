@@ -8,6 +8,7 @@ import Tarife from 'components/tarife/Tarife';
 import Echipa from 'components/echipa/Echipa';
 import Separator from 'components/shared/Separator';
 import DespreNoi from 'components/despreNoi/DespreNoi';
+import GoToTop from 'components/shared/GoToTop';
 import HomePageIntro from './HomePageIntro';
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
   return (
     <Fragment>
       <Header echipaRef={echipaRef} despreNoiRef={despreNoiRef} contactRef={contactRef} proiecteRef={proiecteRef} tarifeRef={tarifeRef} />
+      <GoToTop />
       <HomePageIntro />
       <Separator text="ce tratam ?" boxShadow="0 -15px 15px rgba(0,0,0,0.19), 0 -10px 6px rgba(0,0,0,0.23)" />
       <div className="container-fluid">
