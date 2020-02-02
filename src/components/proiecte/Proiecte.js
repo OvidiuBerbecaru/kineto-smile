@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Project from 'components/proiecte/Project';
-import motivitBackground from 'assets/motivit-background.png';
-import corpConsulting from 'assets/corporation-consulting-desk.png'
+// import motivitBackground from 'assets/motivit-background.png';
+import corpConsulting from 'assets/corporation-consulting-desk.png';
 
 const projects = [
   {
@@ -24,9 +24,9 @@ const projects = [
   },
 ];
 
-const Proiecte = () => {
+const Proiecte = forwardRef((props, ref) => {
   return (
-    <div className="proiecte w-100">
+    <div className="proiecte w-100" ref={ref}>
       <div className="container pt-5 pb-5">
         <div className="row justify-content-around">
           {
@@ -36,6 +36,6 @@ const Proiecte = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Proiecte;

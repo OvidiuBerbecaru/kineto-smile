@@ -346,3 +346,96 @@ export const TarifeSVG = props => (
     </g>
   </svg>
 );
+
+export function HeadSVG(props) {
+  return (
+    <svg width={202} height={169} viewBox="0 0 202 169" {...props}>
+      <title>{"Path"}</title>
+      <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.147%" id="prefix__c">
+          <stop stopColor={props.isActive ? '#FF4B00' : '#76B7FB'} offset="0%" />
+          <stop stopColor={props.isActive ? '#FF4B00' : '#66E9BB'} offset="100%" />
+        </linearGradient>
+        <filter
+          x="-5.6%"
+          y="-11.7%"
+          width="121%"
+          height="126.2%"
+          filterUnits="objectBoundingBox"
+          id="prefix__a"
+        >
+          <feOffset
+            dx={9}
+            dy={2}
+            in="SourceAlpha"
+            result="shadowOffsetOuter1"
+          />
+          <feGaussianBlur
+            stdDeviation={5}
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+          />
+          <feColorMatrix
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+            in="shadowBlurOuter1"
+          />
+        </filter>
+        <path
+          d="M502.226 105l.467.038.536.054c6.768.747 44.872 7.059 39.89 54.206l-.18 1.566s-.121.438-.076.985l-2.075 21.901-.17.85-.177.801c-.871 3.803-3.45 13.164-8.443 17.236l-.16.858-.136.809c-.829 5.135-2.729 20.923 3.345 30.102l.226.333s4.896 11.37 40.072 16.871l1.075.165.406.016c.538.03 1.584.113 3.004.347 4.544.262 8.69.883 12.438 1.861H406.426c2.472-.56 5.107-.972 7.904-1.238l.629-.152c3.491-.812 5.773-.834 5.773-.834 36.13-5.404 41.162-17.036 41.162-17.036 7.646-10.992 3.296-32.102 3.296-32.102-4.044-3.29-6.5-10.03-7.754-14.504-1.775-5.352-2.972-15.383-3.59-30.093l-.088-2.241.019.013c-3.041-47.787 40.283-50.755 41.18-50.811h7.27z"
+          id="prefix__b"
+        />
+      </defs>
+      <g transform="translate(-406 -97)" fillRule="nonzero" fill="none">
+        <use fill="#000" filter="url(#prefix__a)" xlinkHref="#prefix__b" />
+        <use fill="url(#prefix__c)" xlinkHref="#prefix__b" />
+      </g>
+    </svg>
+  );
+}
+
+export function TorsoSVG(props) {
+  return (
+    <svg width={309} height={230} viewBox="0 0 309 230" {...props}>
+      <title>{"Path"}</title>
+      <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.147%" id="prefix__c">
+          <stop stopColor={props.isActive ? '#FF4B00' : '#76B7FB'} offset="0%" />
+          <stop stopColor={props.isActive ? '#FF4B00' : '#66E9BB'} offset="100%" />
+        </linearGradient>
+        <filter
+          x="-3.6%"
+          y="-8.3%"
+          width="113.5%"
+          height="118.6%"
+          filterUnits="objectBoundingBox"
+          id="prefix__a"
+        >
+          <feOffset
+            dx={9}
+            dy={2}
+            in="SourceAlpha"
+            result="shadowOffsetOuter1"
+          />
+          <feGaussianBlur
+            stdDeviation={5}
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+          />
+          <feColorMatrix
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+            in="shadowBlurOuter1"
+          />
+        </filter>
+        <path
+          d="M1109.694 253.998c7.695 9.28 9.874 23.526 6.539 42.74l.57 63.905s2.572 41.158 16.315 63.898l.458.753.277.539c1.349 2.727 6.64 14.72 8.4 38.168h-48.397l-.599-1.522c-5.47-14.033-10.269-30.498-9.514-43.76l-.002-.93-.022-1.312c-.163-6.94-1.36-28.4-9.795-41.534l-.372 4.278-.516 6.311c-1.448 18.29-4.04 55.996-2.836 78.47H924.7c1.633-30.503-3.725-89.059-3.725-89.059-10.175 15.841-9.818 43.776-9.818 43.776.76 13.754-4.417 30.934-10.119 45.282L852.892 464l.126-1.599c2.147-25.822 8.585-37.17 8.585-37.17 13.156-20.962 16.342-58.839 16.72-63.995l.041-.587.57-62.754c-3.576-19.877-1.326-34.51 6.747-43.896h224.013z"
+          id="prefix__b"
+        />
+      </defs>
+      <g transform="translate(-852 -246)" fillRule="nonzero" fill="none">
+        <use fill="#000" filter="url(#prefix__a)" xlinkHref="#prefix__b" />
+        <use fill="url(#prefix__c)" xlinkHref="#prefix__b" />
+      </g>
+    </svg>
+  );
+}
+

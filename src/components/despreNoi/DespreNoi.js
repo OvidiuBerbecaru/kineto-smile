@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, forwardRef } from 'react';
 import ivakinetic from 'assets/ivakinetic.jpg';
 import kinetodidactica from 'assets/kinetodidactica.jpg';
 
@@ -28,9 +28,9 @@ const despreNoiData = [
   },
 ];
 
-const DespreNoi = () => {
+const DespreNoi = forwardRef((props, ref) => {
   return (
-    <div className="container despre-noi">
+    <div className="container despre-noi" ref={ref}>
       <div className="row justify-content-center flex-column align-items-center mt-5">
         {
           despreNoiData.map(({ timestamp, desc }) => (
@@ -55,6 +55,6 @@ const DespreNoi = () => {
       </div>
     </div>
   );
-};
+});
 
 export default DespreNoi;

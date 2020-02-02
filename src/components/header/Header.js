@@ -5,7 +5,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 import classNames from 'classnames';
 import logo from 'assets/kinetoSmileLogo.png';
 import facebook from 'assets/facebook-icon.png';
-import scrollToComponent from 'react-scroll-to-component';
 // import youtube from 'assets/youtube-icon.png';
 
 const headerIcons = [
@@ -13,35 +12,13 @@ const headerIcons = [
   // youtube,
 ];
 
-const pages = [
-  {
-    name: 'Despre Noi',
-    path: '/despre-noi',
-  },
-  {
-    name: 'Proiecte',
-    path: '/contact',
-  },
-  {
-    name: 'Echipa',
-    path: '/contact',
-  },
-  {
-    name: 'Tarife',
-    path: '/tarife',
-  },
-  {
-    name: 'Contact',
-    path: '/contact',
-  },
-];
-
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100);
 
 const Header = (props) => {
   const possiblePaths = ['/despre-noi', '/tarife', '/contact'];
-  const { echipaRef } = props;
-  console.log(echipaRef);
+  const {
+    echipaRef, despreNoiRef, proiecteRef, tarifeRef, contactRef,
+  } = props;
   const headerClasses = classNames(
     'menu-header position-absolute w-100',
     {
@@ -49,6 +26,34 @@ const Header = (props) => {
       'app-bg': possiblePaths.includes(props.location.pathname),
     },
   );
+
+  const pages = [
+    {
+      name: 'Despre Noi',
+      path: '/despre-noi',
+      ref: despreNoiRef,
+    },
+    {
+      name: 'Proiecte',
+      path: '/contact',
+      ref: proiecteRef,
+    },
+    {
+      name: 'Echipa',
+      path: '/contact',
+      ref: echipaRef,
+    },
+    {
+      name: 'Tarife',
+      path: '/tarife',
+      ref: tarifeRef,
+    },
+    {
+      name: 'Contact',
+      path: '/contact',
+      ref: contactRef,
+    },
+  ];
 
   return (
     <Fragment>
@@ -67,7 +72,7 @@ const Header = (props) => {
                   {
                     pages.map(page => (
                       <Nav.Link>
-                        <div className="text-decoration-none nav-link" onClick={() => scrollToRef(echipaRef)}>
+                        <div className="text-decoration-none nav-link" onClick={() => scrollToRef(page.ref)}>
                           <NavLink key={page.name}>{page.name}</NavLink>
                         </div>
                       </Nav.Link>

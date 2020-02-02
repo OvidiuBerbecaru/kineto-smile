@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { mobile } from 'react-icons-kit/entypo/mobile';
 import { plane } from 'react-icons-kit/entypo/plane';
 import { pin } from 'react-icons-kit/entypo/pin';
@@ -19,9 +19,9 @@ const contactDataSet = [
   },
 ];
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className="container contact mb-5">
+    <div className="container contact mb-5" ref={ref}>
       <div className="row">
         {/* <h2>Hai sa ne cunoastem !</h2> */}
         <div className="container">
@@ -35,6 +35,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Contact;

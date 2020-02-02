@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Tarif from 'components/tarife/Tarif';
 
 const tarifeSet1 = [
@@ -39,9 +39,9 @@ const tarifeSet2 = [
   },
 ];
 
-const Tarife = () => {
+const Tarife = forwardRef((props, ref) => {
   return (
-    <div className="container tarife">
+    <div className="container tarife" ref={ref}>
       <div className="row">
         <div className="col-md-6">
           {tarifeSet1.map(tarif => <Tarif title={tarif.title} services={tarif.service} />)}
@@ -52,6 +52,6 @@ const Tarife = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Tarife;
