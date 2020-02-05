@@ -61,6 +61,18 @@ html {
 
 @media only screen and (max-width: 984px) {
   
+  .body {
+    overflow: hidden;
+  }
+
+  .go-to-top {
+    right: 1rem;
+    img {
+      width: 2rem;
+      padding: 0.5rem;
+    }
+  }
+  
   .navbar-collapse {
     background: linear-gradient(90deg, rgba(79,187,240,1) 0%, rgba(102,234,187,1) 100%);
     z-index: 1000;

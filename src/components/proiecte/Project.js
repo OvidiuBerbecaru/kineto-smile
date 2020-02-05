@@ -5,7 +5,7 @@ const Project = ({
 }) => {
   return (
     <div className="col-md-5 project text-center justify-content-center pl-0 pr-0 mt-5 mb-5">
-      <img className="w-100 h-50 mb-4" src={imagePath} alt="project" />
+      <img className="mb-4" src={imagePath} alt="project" />
       <h1>{name}</h1>
       <p className="pl-3 pr-3">{desc}</p>
       <a href={link}>

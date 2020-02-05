@@ -2,11 +2,13 @@ import React, { forwardRef } from 'react';
 import Project from 'components/proiecte/Project';
 // import motivitBackground from 'assets/motivit-background.png';
 import corpConsulting from 'assets/corporation-consulting-desk.png';
+import motivit from 'assets/motivit.png';
+import saptamanaAltfel from 'assets/saptamana-altfel.png';
 
 const projects = [
   {
     name: 'Motivit',
-    imagePath: corpConsulting,
+    imagePath: motivit,
     link: 'https://www.facebook.com/MotiVitBucuresti/',
     desc: 'Asociatia MOTIVIT a luat fiinta din dorinta de a veni in intampinarea nevoilor oamenilor din aceasta societate printr-o viziune holistica asupra omului si dezvoltarii acestuia .Prin asociatia MOTIVIT se desfasoara proiecte ca:”Toghether up”,”5 zile,5 simturi,5 emotii,5 zambete”,”Aleea cu 5 terapii” si multe altele care vor fi dezvoltate in colaborare cu terapeuti din alte domenii cu scopul de a creste calitatea vietii.',
   },
@@ -18,7 +20,7 @@ const projects = [
   },
   {
     name: 'Saptamana Altfel',
-    imagePath: corpConsulting,
+    imagePath: saptamanaAltfel,
     link: 'https://www.facebook.com/MotiVitBucuresti/',
     desc: 'Primul proiect dezvoltat de noi este “Kineto Smile la saptamana altfel”.Am creat un program special pentru saptamana altfel in scoli avand ca scop constientizarea posturii corecte a corpului prin informare si exercitii interactive.',
   },
