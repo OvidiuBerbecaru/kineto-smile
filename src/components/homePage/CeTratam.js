@@ -87,7 +87,7 @@ const CeTratam = () => {
             fontFamily: 'nunito',
             fontWeight: '500',
             lineHeight: '2.5rem',
-        }}>"La inceput facem o evaluare clinico-functionala din punct de vedere kinetoterapeutic pentru a realiza un plan de tratamentadecvat problemelor existente, plan in care se vor trasa obiectivele recuperarii medicale sau ale kinetoprofilaxiei, perioada de timp propusa pentru efectuarea tratamentului in vederea atingerii obiectivelor sau pana la urmatoarea reevaluare" - Lucica Nedelcu( Profesor Kinetoterapeut principal )</p>
+        }}>"La inceput facem o evaluare clinico-functionala din punct de vedere kinetoterapeutic pentru a realiza un plan de tratament adecvat problemelor existente, plan in care se vor trasa obiectivele recuperarii medicale sau ale kinetoprofilaxiei, perioada de timp propusa pentru efectuarea tratamentului in vederea atingerii obiectivelor sau pana la urmatoarea reevaluare" - Lucica Nedelcu ( Profesor Kinetoterapeut principal )</p>
         <div className="w-100 text-center mb-2">
           <img src={HeadPassive} className={headClassName(0)} alt="head" onClick={() => setActiveElement(0)} />
           <TreatmentCard text={bulletpointsHead} className={textClassName(0)} />

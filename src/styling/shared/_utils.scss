@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+// html, body {
+//   overflow: hidden;
+// }
+
+body{
+  -webkit-overflow-scrolling: touch;
+}
+
 .treatmentCard {
   transition: 2s;
 }
@@ -63,6 +71,10 @@ html {
   
   .body {
     overflow: hidden;
+  }
+
+  .body::-webkit-scrollbar {
+    display: none; // Safari and Chrome
   }
 
   .go-to-top {

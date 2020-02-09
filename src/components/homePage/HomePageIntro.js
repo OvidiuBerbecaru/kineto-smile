@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import TeamImg from 'assets/team-homepage.png';
 
-const descriptionText = 'Cabinetul de kinetoprofilaxie si kinetoterapie Kineto Smile ofera servicii de kinetoterapie (tratarea sistemului osteo-neuro-musculo-articular cu ajutorul exercitiilor fizice) precum si kinetoprofilaxie (exercitii personalizate pentru imbunatatirea capacitatii de efort,pentru preventia unor boli profesionale ce vizeaza sistemul musculoscheletal sau pentru adaptarea organismului la un efort specificsezonier sau la practicarea unui sport).';
+const descriptionText = 'Cabinetul de kinetoprofilaxie si kinetoterapie Kineto Smile ofera servicii de kinetoterapie (tratarea sistemului osteo-neuro-musculo-articular cu ajutorul exercitiilor fizice) precum si kinetoprofilaxie (exercitii personalizate pentru imbunatatirea capacitatii de efort,pentru preventia unor boli profesionale ce vizeaza sistemul musculoscheletal sau pentru adaptarea organismului la un efort specific sezonier sau la practicarea unui sport).';
 
 const HomePageIntro = () => {
   return (
